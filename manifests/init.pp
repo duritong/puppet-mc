@@ -5,7 +5,7 @@
 modules_dir { "mc": }
 
 class mc {
-i	package{mc:
+	package{mc:
                 name => mc,
                 alias   => 'mc',
                 category => $operatingsystem ? {

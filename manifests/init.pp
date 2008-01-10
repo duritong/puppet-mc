@@ -7,7 +7,6 @@ modules_dir { "mc": }
 class mc {
 	package{mc:
                 name => mc,
-                alias   => 'mc',
                 category => $operatingsystem ? {
                         gentoo => 'app-misc',
                         default => '',

@@ -2,7 +2,7 @@
 # Copyright (C) 2007 admin@immerda.ch
 #
 
-modules_dir { "mc": }
+#modules_dir { "mc": }
 
 class mc {
 	package{mc:

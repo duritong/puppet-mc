@@ -1,16 +1,6 @@
-# modules/mc/manifests/init.pp - manage mc stuff
-# Copyright (C) 2007 admin@immerda.ch
-#
-
-#modules_dir { "mc": }
-
 class mc {
-	package{mc:
-                name => mc,
-                category => $operatingsystem ? {
-                        gentoo => 'app-misc',
-                        default => '',
-                },
-                ensure => present,
-        }
+  case $operatingsystem {
+    gentoo: { include mc::gentoo }
+    default: { include mc::base }
+  }
 }

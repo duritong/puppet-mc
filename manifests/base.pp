@@ -1,5 +1,5 @@
 class mc::base {
-    package{mc:
-        ensure => present,
-    }
+  package{mc:
+    ensure => present,
+  }
 }

@@ -1,5 +1,5 @@
 class mc {
-  case $operatingsystem {
+  case $::operatingsystem {
     gentoo: { include mc::gentoo }
     default: { include mc::base }
   }
